@@ -21,7 +21,7 @@ struct MultilineInputFieldView: View {
                 .frame(width: tWidth, alignment: .leading)
             TextEditor(text: $value)
                 .font(.body)
-                .frame(width: .infinity, height: inputFieldHeight, alignment: .center)
+                .frame(width: nil, height: inputFieldHeight, alignment: .center)
                 .clipShape(RoundedRectangle(cornerRadius: 5.0, style: .continuous))
         })
     }
